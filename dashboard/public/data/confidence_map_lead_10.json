@@ -1,0 +1,370 @@
+{
+  "lead_day": 10,
+  "date": "2002-07-16",
+  "regions": [
+    {
+      "region_id": "1",
+      "name": "Lakshadweep",
+      "effective_lead_time": 10.0,
+      "p_bust": 0.052,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.11,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "2",
+      "name": "Andaman & Nicobar Islands",
+      "effective_lead_time": 10.1,
+      "p_bust": 0.055,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.114,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "3",
+      "name": "Coastal Andhra Pradesh",
+      "effective_lead_time": 10.2,
+      "p_bust": 0.075,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.141,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "4",
+      "name": "Arunachal Pradesh",
+      "effective_lead_time": 10.1,
+      "p_bust": 0.06,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.121,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "5",
+      "name": "Assam & Meghalaya",
+      "effective_lead_time": 9.8,
+      "p_bust": 0.04,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.094,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "6",
+      "name": "Bihar",
+      "effective_lead_time": 10.6,
+      "p_bust": 0.106,
+      "confidence_band": "MODERATE",
+      "p_bust_p90": 0.183,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "7",
+      "name": "Konkan & Goa",
+      "effective_lead_time": 11.5,
+      "p_bust": 0.198,
+      "confidence_band": "MODERATE",
+      "p_bust_p90": 0.307,
+      "bust_direction": "none",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "8",
+      "name": "Saurashtra & Kutch",
+      "effective_lead_time": 9.9,
+      "p_bust": 0.02,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.067,
+      "bust_direction": "none",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "9",
+      "name": "Haryana, Chandigarh & Delhi",
+      "effective_lead_time": 9.9,
+      "p_bust": 0.015,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.06,
+      "bust_direction": "none",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "10",
+      "name": "Himachal Pradesh",
+      "effective_lead_time": 10.1,
+      "p_bust": 0.062,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.124,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "11",
+      "name": "Jammu & Kashmir",
+      "effective_lead_time": 9.8,
+      "p_bust": 0.032,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.083,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "12",
+      "name": "South Interior Karnataka",
+      "effective_lead_time": 10.3,
+      "p_bust": 0.077,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.144,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "13",
+      "name": "Vidarbha",
+      "effective_lead_time": 11.4,
+      "p_bust": 0.195,
+      "confidence_band": "MODERATE",
+      "p_bust_p90": 0.303,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "14",
+      "name": "West Madhya Pradesh",
+      "effective_lead_time": 9.7,
+      "p_bust": 0.042,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.097,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "15",
+      "name": "Madhya Maharashtra",
+      "effective_lead_time": 9.8,
+      "p_bust": 0.03,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.08,
+      "bust_direction": "none",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "16",
+      "name": "Nagaland, Manipur, Mizoram & Tripura",
+      "effective_lead_time": 10.3,
+      "p_bust": 0.082,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.151,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "17",
+      "name": "Odisha",
+      "effective_lead_time": 10.3,
+      "p_bust": 0.085,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.155,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "18",
+      "name": "Punjab",
+      "effective_lead_time": 9.9,
+      "p_bust": 0.022,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.07,
+      "bust_direction": "none",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "19",
+      "name": "West Rajasthan",
+      "effective_lead_time": 9.9,
+      "p_bust": 0.017,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.063,
+      "bust_direction": "none",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "20",
+      "name": "Tamil Nadu & Puducherry",
+      "effective_lead_time": 9.9,
+      "p_bust": 0.01,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.054,
+      "bust_direction": "none",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "21",
+      "name": "East Uttar Pradesh",
+      "effective_lead_time": 10.7,
+      "p_bust": 0.12,
+      "confidence_band": "MODERATE",
+      "p_bust_p90": 0.202,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "22",
+      "name": "Gangetic West Bengal",
+      "effective_lead_time": 10.1,
+      "p_bust": 0.057,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.117,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "23",
+      "name": "Sub-Himalayan West Bengal & Sikkim",
+      "effective_lead_time": 9.8,
+      "p_bust": 0.027,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.076,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "24",
+      "name": "Jharkhand",
+      "effective_lead_time": 10.3,
+      "p_bust": 0.08,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.148,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "25",
+      "name": "Uttarakhand",
+      "effective_lead_time": 9.8,
+      "p_bust": 0.037,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.09,
+      "bust_direction": "none",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "26",
+      "name": "East Rajasthan",
+      "effective_lead_time": 9.8,
+      "p_bust": 0.035,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.087,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "27",
+      "name": "Gujarat Region",
+      "effective_lead_time": 9.8,
+      "p_bust": 0.025,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.074,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "28",
+      "name": "West Uttar Pradesh",
+      "effective_lead_time": 10.2,
+      "p_bust": 0.065,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.128,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "29",
+      "name": "Telangana",
+      "effective_lead_time": 9.7,
+      "p_bust": 0.05,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.108,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "30",
+      "name": "Rayalaseema",
+      "effective_lead_time": 9.7,
+      "p_bust": 0.045,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.101,
+      "bust_direction": "none",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "31",
+      "name": "Chhattisgarh",
+      "effective_lead_time": 11.9,
+      "p_bust": 0.238,
+      "confidence_band": "MODERATE",
+      "p_bust_p90": 0.361,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "32",
+      "name": "East Madhya Pradesh",
+      "effective_lead_time": 10.2,
+      "p_bust": 0.07,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.134,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "33",
+      "name": "Coastal Karnataka",
+      "effective_lead_time": 11.5,
+      "p_bust": 0.2,
+      "confidence_band": "MODERATE",
+      "p_bust_p90": 0.31,
+      "bust_direction": "none",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "34",
+      "name": "North Interior Karnataka",
+      "effective_lead_time": 10.2,
+      "p_bust": 0.067,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.13,
+      "bust_direction": "none",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "35",
+      "name": "Kerala",
+      "effective_lead_time": 10.2,
+      "p_bust": 0.072,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.137,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    },
+    {
+      "region_id": "36",
+      "name": "Marathwada",
+      "effective_lead_time": 9.7,
+      "p_bust": 0.047,
+      "confidence_band": "HIGH",
+      "p_bust_p90": 0.103,
+      "bust_direction": "dry",
+      "unprecedented_flag": false
+    }
+  ],
+  "variable": "rainfall",
+  "model_version": "pratyaya-v1.0.0-loyo",
+  "data_as_of": "2002-07-16T00:00:00Z",
+  "is_live": true
+}

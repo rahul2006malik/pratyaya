@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Phase 1: Global CSS Variables (Section 6.2) ─────────────────────────── */
+@layer base {
+  :root {
+    color-scheme: dark;
+    /* Dark ops-room defaults */
+    --canvas:        #0B1220;
+    --surface:       #121B2E;
+    --ink:           #E9EDF5;
+    --ink-muted:     #8792A8;
+    --accent:        #4FB8E0;
+    /* Light mode */
+    --canvas-light:  #FAFAF8;
+    --surface-light: #FFFFFF;
+    --ink-light:     #14171F;
+    /* IMD Confidence Bands */
+    --imd-high:         #4C8C6D;
+    --imd-moderate:     #C99A3A;
+    --imd-low:          #B8551A;
+    --imd-critical:     #B8203A;
+    --imd-unprecedented:#7C5CBF;
+    /* Single border radius (Section 6.3) */
+    --radius: 6px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--canvas);
+    color: var(--ink);
+    font-family: 'Mukta', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+
+  /* Display serif for headline sentences */
+  .font-serif, [data-display="true"] {
+    font-family: 'Fraunces', Georgia, serif;
+    font-variant-numeric: oldstyle-nums;
+  }
+
+  /* Tabular figures — critical for instrument data that must not jitter */
+  .font-mono,
+  [data-tabular="true"] {
+    font-family: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums lining-nums;
+  }
+
+  /* Headings inherit font-sans (Mukta) unless explicitly overridden */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* ── Scrollbar (thin instrument-style) ────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: #0B1220; }
+::-webkit-scrollbar-thumb { background: #1E2D42; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #3D536E; }
+
+/* ── IMD Confidence Band Fills (used by D3 SVG via JS, referenced in CSS) ── */
+.fill-imd-high         { fill: #4C8C6D; }
+.fill-imd-moderate     { fill: #C99A3A; }
+.fill-imd-low          { fill: #B8551A; }
+.fill-imd-critical     { fill: #B8203A; }
+.fill-imd-unprecedented{ fill: #7C5CBF; }
+
+/* ── Map Subdivision Paths ───────────────────────────────────────────────── */
+.subdivision-path {
+  transition: fill 150ms ease, stroke 100ms ease, filter 100ms ease;
+  cursor: pointer;
+}
+.subdivision-path:hover {
+  filter: brightness(1.22) drop-shadow(0 0 5px rgba(79, 184, 224, 0.35));
+}
+.subdivision-selected {
+  stroke: #4FB8E0 !important;
+  stroke-width: 2.5px !important;
+  filter: brightness(1.18) drop-shadow(0 0 7px rgba(79, 184, 224, 0.5)) !important;
+}
+
+/* ── SVG Hatch Patterns (bust_direction — texture, not hue) ─────────────── */
+/* Defined inline in SVG <defs> for D3 compatibility; CSS classes for reference */
+
+/* ── Unprecedented Pulse Animation ──────────────────────────────────────── */
+@keyframes pulseViolet {
+  0%, 100% { opacity: 0.75; }
+  50%       { opacity: 1; }
+}
+.animate-unprecedented {
+  animation: pulseViolet 2.5s ease-in-out infinite;
+}
+
+/* ── ELT Ghost Pin Slide ─────────────────────────────────────────────────── */
+@keyframes ghostPinSlide {
+  0%   { transform: translateX(0); opacity: 0; }
+  15%  { opacity: 0.6; }
+  100% { transform: translateX(var(--ghost-offset, 120px)); opacity: 1; }
+}
+.ghost-pin-animated {
+  animation: ghostPinSlide 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Regional Drawer Slide In ────────────────────────────────────────────── */
+@keyframes slideInRight {
+  0%   { transform: translateX(100%); opacity: 0; }
+  100% { transform: translateX(0);    opacity: 1; }
+}
+.drawer-slide-in {
+  animation: slideInRight 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Entrance Fade ───────────────────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in { animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+
+/* ── Streamline Arrows ───────────────────────────────────────────────────── */
+@keyframes flowStream { to { stroke-dashoffset: -32; } }
+.streamline-animated {
+  stroke-dasharray: 12, 6;
+  animation: flowStream 2s linear infinite;
+}
+
+/* ── Horizon Scrubber Drag Handle ────────────────────────────────────────── */
+.scrubber-handle {
+  cursor: grab;
+  touch-action: none;
+}
+.scrubber-handle:active { cursor: grabbing; }
+
+/* ── OOD Banner — cannot be dismissed by accident ────────────────────────── */
+.ood-banner {
+  background: linear-gradient(135deg, #1A0D2E 0%, #2D1B4E 100%);
+  border: 1.5px solid #7C5CBF;
+  position: relative;
+  overflow: hidden;
+}
+.ood-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(124, 92, 191, 0.08),
+    rgba(124, 92, 191, 0.08) 4px,
+    transparent 4px,
+    transparent 12px
+  );
+  pointer-events: none;
+}
+
+/* ── Print Stylesheet (A4 Bulletin) ─────────────────────────────────────── */
+@media print {
+  @page { size: A4 portrait; margin: 10mm 12mm; }
+  body {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  header, nav, .no-print { display: none !important; }
+  .print-bulletin-container {
+    position: static !important;
+    inset: auto !important;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    width: 100% !important;
+  }
+}
+
+/* ── Reduced Motion Compliance (Section 6.4) ────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .ghost-pin-animated,
+  .animate-unprecedented,
+  .streamline-animated,
+  .animate-fade-in,
+  .drawer-slide-in {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ── Utility: no-scrollbar ───────────────────────────────────────────────── */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

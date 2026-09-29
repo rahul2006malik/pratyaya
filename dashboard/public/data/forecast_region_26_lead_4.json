@@ -1,0 +1,121 @@
+{
+  "effective_lead_time": 3.9,
+  "p_bust": 0.015,
+  "p_bust_p90": 0.06,
+  "confidence_band": "HIGH",
+  "top_analogues": [
+    {
+      "date": "2002-08-22",
+      "weight": 0.1408,
+      "outcome": "no bust",
+      "observed_value": null,
+      "forecast_value": null,
+      "distance": 26.93,
+      "bust_direction": "none",
+      "is_bust": false,
+      "closeness_rank": 1,
+      "mechanism": "Z500 +0.1\u03c3, u850 +0.1\u03c3, TCWV +0.3\u03c3 on 2002-08-22"
+    },
+    {
+      "date": "2002-06-04",
+      "weight": 0.1298,
+      "outcome": "no bust",
+      "observed_value": null,
+      "forecast_value": null,
+      "distance": 29.82,
+      "bust_direction": "none",
+      "is_bust": false,
+      "closeness_rank": 2,
+      "mechanism": "Z500 -0.2\u03c3, u850 -0.1\u03c3, TCWV -1.2\u03c3 on 2002-06-04"
+    },
+    {
+      "date": "2002-06-01",
+      "weight": 0.1234,
+      "outcome": "no bust",
+      "observed_value": null,
+      "forecast_value": null,
+      "distance": 31.47,
+      "bust_direction": "none",
+      "is_bust": false,
+      "closeness_rank": 3,
+      "mechanism": "Z500 -0.3\u03c3, u850 -0.2\u03c3, TCWV -1.4\u03c3 on 2002-06-01"
+    },
+    {
+      "date": "2002-08-07",
+      "weight": 0.1228,
+      "outcome": "no bust",
+      "observed_value": null,
+      "forecast_value": null,
+      "distance": 31.63,
+      "bust_direction": "none",
+      "is_bust": false,
+      "closeness_rank": 4,
+      "mechanism": "Z500 +0.2\u03c3, u850 +0.1\u03c3, TCWV +1.0\u03c3 on 2002-08-07"
+    },
+    {
+      "date": "2000-09-01",
+      "weight": 0.1224,
+      "outcome": "no bust",
+      "observed_value": 5.9,
+      "forecast_value": 5.2,
+      "distance": 31.73,
+      "bust_direction": "none",
+      "is_bust": false,
+      "closeness_rank": 5,
+      "mechanism": "Z500 -0.0\u03c3, u850 -0.1\u03c3, TCWV -0.4\u03c3 on 2000-09-01"
+    },
+    {
+      "date": "2002-08-04",
+      "weight": 0.1217,
+      "outcome": "no bust",
+      "observed_value": null,
+      "forecast_value": null,
+      "distance": 31.91,
+      "bust_direction": "none",
+      "is_bust": false,
+      "closeness_rank": 6,
+      "mechanism": "Z500 +0.2\u03c3, u850 +0.2\u03c3, TCWV +1.1\u03c3 on 2002-08-04"
+    },
+    {
+      "date": "2002-06-25",
+      "weight": 0.1208,
+      "outcome": "no bust",
+      "observed_value": null,
+      "forecast_value": null,
+      "distance": 32.15,
+      "bust_direction": "none",
+      "is_bust": false,
+      "closeness_rank": 7,
+      "mechanism": "Z500 +0.1\u03c3, u850 +0.0\u03c3, TCWV +0.3\u03c3 on 2002-06-25"
+    },
+    {
+      "date": "2002-08-10",
+      "weight": 0.1183,
+      "outcome": "no bust",
+      "observed_value": null,
+      "forecast_value": null,
+      "distance": 32.79,
+      "bust_direction": "none",
+      "is_bust": false,
+      "closeness_rank": 8,
+      "mechanism": "Z500 +0.2\u03c3, u850 +0.1\u03c3, TCWV +0.9\u03c3 on 2002-08-10"
+    }
+  ],
+  "risk_factors": [
+    "Low-rank Mahalanobis distance (d_k = 32.8) in 32-dim metric space (matches active synoptic states).",
+    "Historical analogues exhibit balanced error profile (no directional lean) with mean signed error expectation of -0.7 mm/day and dispersion 0.0 mm/day.",
+    "NWP ensemble spread of 1.3 mm at Lead Day 4 combined with calibrated bust risk of 1%.",
+    "Aravalli barrier deflection and dry/moist boundary oscillation across East Rajasthan"
+  ],
+  "bust_direction": "none",
+  "unprecedented_flag": false,
+  "region_id": "26",
+  "region_name": "East Rajasthan",
+  "lead_day": 4,
+  "init_date": "2002-07-16",
+  "headline": "Day 4 forecast \u00b7 behaving like Day 3.9 (1% bust risk \u2014 balanced error profile)",
+  "observed_bust_rate_in_band": 0.015,
+  "model_version": "pratyaya-v1.0.0-loyo",
+  "data_as_of": "2002-07-16T00:00:00Z",
+  "is_live": true
+}

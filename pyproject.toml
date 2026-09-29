@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pratyaya"
+version = "1.0.0"
+description = "Synoptic Analogue Diagnostic Engine & Numerical Forecast Bust Early-Warning System"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Pratyaya Atmospheric Research Collaboration"}
+]
+keywords = [
+    "meteorology",
+    "weather-forecasting",
+    "forecast-busts",
+    "synoptic-analogues",
+    "atmospheric-dynamics",
+    "numerical-weather-prediction",
+    "monsoon"
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "pyarrow",
+    "shapely",
+    "geopandas",
+    "xarray",
+    "zarr",
+    "s3fs",
+    "gcsfs",
+    "cfgrib",
+    "eccodes",
+    "imdlib",
+    "scikit-learn",
+    "lightgbm",
+    "pydantic>=2.0.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.20.0",
+    "httpx>=0.24.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+norecursedirs = [".*", "build", "dist", "dashboard/node_modules", "dashboard", "internal"]

@@ -1,0 +1,1463 @@
+{
+  "optimal_k": 9,
+  "silhouette_score": 0.0959,
+  "silhouette_ladder": {
+    "3": 0.0643,
+    "4": 0.0661,
+    "5": 0.0706,
+    "6": 0.0751,
+    "7": 0.0792,
+    "8": 0.0932,
+    "9": 0.0959,
+    "10": 0.0881
+  },
+  "silhouette_scores": {
+    "3": 0.0643,
+    "4": 0.0661,
+    "5": 0.0706,
+    "6": 0.0751,
+    "7": 0.0792,
+    "8": 0.0932,
+    "9": 0.0959,
+    "10": 0.0881
+  },
+  "high_burden_threshold": 11.0,
+  "n_high_burden_dates": 29,
+  "n_high_burden_days": 29,
+  "total_candidate_dates": 366,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "name": "Northwest Bay Depression Track",
+      "mechanism_summary": "Monsoon low-pressure system / depression propagating westward across the Bay of Bengal into Central India, producing intense localized rain bands and strong cyclonic shear that NWP models track with phase and displacement errors, leading to severe wet forecast busts.",
+      "n_members": 3,
+      "n_independent_events": 2,
+      "member_dates": [
+        "2000-07-13",
+        "2000-07-16",
+        "2002-08-04"
+      ],
+      "seasonality": {
+        "June": 0.0,
+        "July": 0.667,
+        "August": 0.333,
+        "September": 0.0
+      },
+      "threatened_subdivisions": [
+        {
+          "region_id": "14",
+          "name": "Punjab",
+          "bust_rate": 0.233,
+          "bust_count": 7,
+          "mean_signed_error": -3.5
+        },
+        {
+          "region_id": "22",
+          "name": "Saurashtra & Kutch",
+          "bust_rate": 0.2,
+          "bust_count": 6,
+          "mean_signed_error": -6.6
+        },
+        {
+          "region_id": "26",
+          "name": "Vidarbha",
+          "bust_rate": 0.2,
+          "bust_count": 6,
+          "mean_signed_error": -1.8
+        },
+        {
+          "region_id": "28",
+          "name": "Coastal Andhra Pradesh",
+          "bust_rate": 0.167,
+          "bust_count": 5,
+          "mean_signed_error": 0.3
+        },
+        {
+          "region_id": "35",
+          "name": "Kerala & Mahe",
+          "bust_rate": 0.133,
+          "bust_count": 4,
+          "mean_signed_error": -7.5
+        },
+        {
+          "region_id": "7",
+          "name": "Odisha",
+          "bust_rate": 0.133,
+          "bust_count": 4,
+          "mean_signed_error": -4.3
+        }
+      ],
+      "vulnerable_leads": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "signed_bias": "wet",
+      "mean_error_mm": 0.72,
+      "composite_summary": {
+        "z500": {
+          "min": -8.46,
+          "max": 21.59,
+          "mean": 1.96,
+          "std": 4.65
+        },
+        "u850": {
+          "min": -2.55,
+          "max": 5.74,
+          "mean": 0.4,
+          "std": 1.23
+        },
+        "v850": {
+          "min": -1.85,
+          "max": 4.09,
+          "mean": 0.24,
+          "std": 0.82
+        },
+        "mslp": {
+          "min": -7.4,
+          "max": 1.66,
+          "mean": -0.24,
+          "std": 0.89
+        },
+        "tcwv": {
+          "min": 10.24,
+          "max": 20.53,
+          "mean": 14.12,
+          "std": 1.58
+        }
+      },
+      "validation_status": "unvalidated_exploratory",
+      "is_validated": false,
+      "validation": [
+        {
+          "catalogue_name": "IMD Monsoon Depression Catalog",
+          "observed_count": 0,
+          "expected_count": 0.83,
+          "enrichment_ratio": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 0.5402,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Rajeevan et al. (2010) Break Spell Index",
+          "observed_count": 0,
+          "expected_count": 0.0,
+          "enrichment_ratio": 1.0,
+          "ci_95": [
+            1.0,
+            1.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Rajeevan et al. (2010) Active Monsoon Index",
+          "observed_count": 0,
+          "expected_count": 0.83,
+          "enrichment_ratio": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 0.5402,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Subtropical Westerly Trough Intrusion List",
+          "observed_count": 0,
+          "expected_count": 0.31,
+          "enrichment_ratio": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 1.0,
+          "is_significant": false
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "name": "Subtropical Westerly Trough Intrusion",
+      "mechanism_summary": "Upper-tropospheric midlatitude Rossby wave trough dipping south of 30\u00b0N across Northwest India, superimposing strong baroclinic shear and upper-level divergence over Arabian Sea moisture influx.",
+      "n_members": 5,
+      "n_independent_events": 5,
+      "member_dates": [
+        "2001-06-01",
+        "2001-06-28",
+        "2001-09-25",
+        "2002-06-22",
+        "2002-08-19"
+      ],
+      "seasonality": {
+        "June": 0.6,
+        "July": 0.0,
+        "August": 0.2,
+        "September": 0.2
+      },
+      "threatened_subdivisions": [
+        {
+          "region_id": "21",
+          "name": "Gujarat Region",
+          "bust_rate": 0.18,
+          "bust_count": 9,
+          "mean_signed_error": 3.7
+        },
+        {
+          "region_id": "17",
+          "name": "West Rajasthan",
+          "bust_rate": 0.18,
+          "bust_count": 9,
+          "mean_signed_error": -3.8
+        },
+        {
+          "region_id": "2",
+          "name": "Arunachal Pradesh",
+          "bust_rate": 0.14,
+          "bust_count": 7,
+          "mean_signed_error": 16.6
+        },
+        {
+          "region_id": "27",
+          "name": "Chhattisgarh",
+          "bust_rate": 0.14,
+          "bust_count": 7,
+          "mean_signed_error": -2.9
+        },
+        {
+          "region_id": "36",
+          "name": "Lakshadweep",
+          "bust_rate": 0.14,
+          "bust_count": 7,
+          "mean_signed_error": -4.8
+        },
+        {
+          "region_id": "24",
+          "name": "Madhya Maharashtra",
+          "bust_rate": 0.12,
+          "bust_count": 6,
+          "mean_signed_error": 3.1
+        }
+      ],
+      "vulnerable_leads": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "signed_bias": "wet",
+      "mean_error_mm": 1.51,
+      "composite_summary": {
+        "z500": {
+          "min": -12.88,
+          "max": 7.61,
+          "mean": -0.74,
+          "std": 2.63
+        },
+        "u850": {
+          "min": -2.65,
+          "max": 1.74,
+          "mean": -0.15,
+          "std": 0.6
+        },
+        "v850": {
+          "min": -2.28,
+          "max": 1.3,
+          "mean": -0.11,
+          "std": 0.5
+        },
+        "mslp": {
+          "min": -1.0,
+          "max": 2.47,
+          "mean": 0.1,
+          "std": 0.46
+        },
+        "tcwv": {
+          "min": -8.71,
+          "max": -3.03,
+          "mean": -5.38,
+          "std": 0.82
+        }
+      },
+      "validation_status": "unvalidated_exploratory",
+      "is_validated": false,
+      "validation": [
+        {
+          "catalogue_name": "IMD Monsoon Depression Catalog",
+          "observed_count": 1,
+          "expected_count": 1.38,
+          "enrichment_ratio": 0.72,
+          "ci_95": [
+            0.0,
+            2.17
+          ],
+          "chi2_stat": 0.61,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Rajeevan et al. (2010) Break Spell Index",
+          "observed_count": 0,
+          "expected_count": 0.0,
+          "enrichment_ratio": 1.0,
+          "ci_95": [
+            1.0,
+            1.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Rajeevan et al. (2010) Active Monsoon Index",
+          "observed_count": 1,
+          "expected_count": 1.38,
+          "enrichment_ratio": 0.72,
+          "ci_95": [
+            0.0,
+            2.17
+          ],
+          "chi2_stat": 0.61,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Subtropical Westerly Trough Intrusion List",
+          "observed_count": 1,
+          "expected_count": 0.52,
+          "enrichment_ratio": 1.93,
+          "ci_95": [
+            0.0,
+            5.8
+          ],
+          "chi2_stat": 2.75,
+          "p_value": 0.4461,
+          "is_significant": false
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "name": "Northward-Shifted Monsoon Trough / Break Onset",
+      "mechanism_summary": "Northward shift of the monsoon trough to the Himalayan foothills, inducing a widespread break-monsoon phase across Central and Northwest India with convective suppression, positive MSLP anomalies, and severe dry (overpredicted rainfall) forecast busts.",
+      "n_members": 3,
+      "n_independent_events": 3,
+      "member_dates": [
+        "2000-07-10",
+        "2001-06-10",
+        "2001-07-01"
+      ],
+      "seasonality": {
+        "June": 0.333,
+        "July": 0.667,
+        "August": 0.0,
+        "September": 0.0
+      },
+      "threatened_subdivisions": [
+        {
+          "region_id": "17",
+          "name": "West Rajasthan",
+          "bust_rate": 0.267,
+          "bust_count": 8,
+          "mean_signed_error": -6.5
+        },
+        {
+          "region_id": "2",
+          "name": "Arunachal Pradesh",
+          "bust_rate": 0.233,
+          "bust_count": 7,
+          "mean_signed_error": 18.3
+        },
+        {
+          "region_id": "31",
+          "name": "Tamil Nadu, Puducherry & Karaikal",
+          "bust_rate": 0.233,
+          "bust_count": 7,
+          "mean_signed_error": -4.2
+        },
+        {
+          "region_id": "27",
+          "name": "Chhattisgarh",
+          "bust_rate": 0.2,
+          "bust_count": 6,
+          "mean_signed_error": -6.9
+        },
+        {
+          "region_id": "35",
+          "name": "Kerala & Mahe",
+          "bust_rate": 0.167,
+          "bust_count": 5,
+          "mean_signed_error": -10.0
+        },
+        {
+          "region_id": "14",
+          "name": "Punjab",
+          "bust_rate": 0.167,
+          "bust_count": 5,
+          "mean_signed_error": -1.3
+        }
+      ],
+      "vulnerable_leads": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "signed_bias": "dry",
+      "mean_error_mm": -0.22,
+      "composite_summary": {
+        "z500": {
+          "min": -29.74,
+          "max": 10.58,
+          "mean": -0.03,
+          "std": 3.88
+        },
+        "u850": {
+          "min": -4.05,
+          "max": 4.28,
+          "mean": 0.12,
+          "std": 0.79
+        },
+        "v850": {
+          "min": -3.68,
+          "max": 3.65,
+          "mean": 0.08,
+          "std": 0.71
+        },
+        "mslp": {
+          "min": -7.89,
+          "max": 1.35,
+          "mean": -0.2,
+          "std": 0.84
+        },
+        "tcwv": {
+          "min": 1.19,
+          "max": 15.29,
+          "mean": 4.2,
+          "std": 1.48
+        }
+      },
+      "validation_status": "unvalidated_exploratory",
+      "is_validated": false,
+      "validation": [
+        {
+          "catalogue_name": "IMD Monsoon Depression Catalog",
+          "observed_count": 1,
+          "expected_count": 0.83,
+          "enrichment_ratio": 1.21,
+          "ci_95": [
+            0.0,
+            3.62
+          ],
+          "chi2_stat": 1.36,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Rajeevan et al. (2010) Break Spell Index",
+          "observed_count": 0,
+          "expected_count": 0.0,
+          "enrichment_ratio": 1.0,
+          "ci_95": [
+            1.0,
+            1.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Rajeevan et al. (2010) Active Monsoon Index",
+          "observed_count": 3,
+          "expected_count": 0.83,
+          "enrichment_ratio": 3.62,
+          "ci_95": [
+            3.62,
+            3.62
+          ],
+          "chi2_stat": Infinity,
+          "p_value": 0.0153,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Subtropical Westerly Trough Intrusion List",
+          "observed_count": 0,
+          "expected_count": 0.31,
+          "enrichment_ratio": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 1.0,
+          "is_significant": false
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "name": "Exploratory Synoptic Regime 4 (Unclassified Transition)",
+      "mechanism_summary": "Synoptic circulation anomaly pattern with localized pressure gradients and moisture anomalies not statistically enriched for catalogued synoptic disturbances; honestly classified as exploratory.",
+      "n_members": 3,
+      "n_independent_events": 3,
+      "member_dates": [
+        "2000-06-04",
+        "2000-08-19",
+        "2001-07-28"
+      ],
+      "seasonality": {
+        "June": 0.333,
+        "July": 0.333,
+        "August": 0.333,
+        "September": 0.0
+      },
+      "threatened_subdivisions": [
+        {
+          "region_id": "1",
+          "name": "Andaman & Nicobar Islands",
+          "bust_rate": 0.3,
+          "bust_count": 9,
+          "mean_signed_error": 25.3
+        },
+        {
+          "region_id": "2",
+          "name": "Arunachal Pradesh",
+          "bust_rate": 0.267,
+          "bust_count": 8,
+          "mean_signed_error": 18.2
+        },
+        {
+          "region_id": "13",
+          "name": "Haryana, Chandigarh & Delhi",
+          "bust_rate": 0.233,
+          "bust_count": 7,
+          "mean_signed_error": 13.8
+        },
+        {
+          "region_id": "12",
+          "name": "Uttarakhand",
+          "bust_rate": 0.167,
+          "bust_count": 5,
+          "mean_signed_error": 5.7
+        },
+        {
+          "region_id": "34",
+          "name": "South Interior Karnataka",
+          "bust_rate": 0.167,
+          "bust_count": 5,
+          "mean_signed_error": 5.0
+        },
+        {
+          "region_id": "15",
+          "name": "Himachal Pradesh",
+          "bust_rate": 0.133,
+          "bust_count": 4,
+          "mean_signed_error": 5.8
+        }
+      ],
+      "vulnerable_leads": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "signed_bias": "wet",
+      "mean_error_mm": 3.3,
+      "composite_summary": {
+        "z500": {
+          "min": -10.33,
+          "max": 10.03,
+          "mean": 0.32,
+          "std": 2.87
+        },
+        "u850": {
+          "min": -1.71,
+          "max": 2.11,
+          "mean": 0.05,
+          "std": 0.6
+        },
+        "v850": {
+          "min": -1.88,
+          "max": 2.26,
+          "mean": 0.01,
+          "std": 0.59
+        },
+        "mslp": {
+          "min": -2.13,
+          "max": 1.43,
+          "mean": -0.03,
+          "std": 0.48
+        },
+        "tcwv": {
+          "min": -0.86,
+          "max": 4.8,
+          "mean": 2.07,
+          "std": 0.9
+        }
+      },
+      "validation_status": "unvalidated_exploratory",
+      "is_validated": false,
+      "validation": [
+        {
+          "catalogue_name": "IMD Monsoon Depression Catalog",
+          "observed_count": 2,
+          "expected_count": 0.83,
+          "enrichment_ratio": 2.42,
+          "ci_95": [
+            0.0,
+            3.62
+          ],
+          "chi2_stat": 6.67,
+          "p_value": 0.1762,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Rajeevan et al. (2010) Break Spell Index",
+          "observed_count": 0,
+          "expected_count": 0.0,
+          "enrichment_ratio": 1.0,
+          "ci_95": [
+            1.0,
+            1.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Rajeevan et al. (2010) Active Monsoon Index",
+          "observed_count": 1,
+          "expected_count": 0.83,
+          "enrichment_ratio": 1.21,
+          "ci_95": [
+            0.0,
+            3.62
+          ],
+          "chi2_stat": 1.36,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Subtropical Westerly Trough Intrusion List",
+          "observed_count": 1,
+          "expected_count": 0.31,
+          "enrichment_ratio": 3.22,
+          "ci_95": [
+            0.0,
+            9.67
+          ],
+          "chi2_stat": 6.0,
+          "p_value": 0.2885,
+          "is_significant": false
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "name": "Exploratory Synoptic Regime 5 (Unclassified Transition)",
+      "mechanism_summary": "Synoptic circulation anomaly pattern with localized pressure gradients and moisture anomalies not statistically enriched for catalogued synoptic disturbances; honestly classified as exploratory.",
+      "n_members": 3,
+      "n_independent_events": 3,
+      "member_dates": [
+        "2000-06-01",
+        "2000-06-28",
+        "2000-08-10"
+      ],
+      "seasonality": {
+        "June": 0.667,
+        "July": 0.0,
+        "August": 0.333,
+        "September": 0.0
+      },
+      "threatened_subdivisions": [
+        {
+          "region_id": "2",
+          "name": "Arunachal Pradesh",
+          "bust_rate": 0.233,
+          "bust_count": 7,
+          "mean_signed_error": 17.4
+        },
+        {
+          "region_id": "12",
+          "name": "Uttarakhand",
+          "bust_rate": 0.167,
+          "bust_count": 5,
+          "mean_signed_error": 8.5
+        },
+        {
+          "region_id": "30",
+          "name": "Rayalaseema",
+          "bust_rate": 0.167,
+          "bust_count": 5,
+          "mean_signed_error": 1.0
+        },
+        {
+          "region_id": "34",
+          "name": "South Interior Karnataka",
+          "bust_rate": 0.133,
+          "bust_count": 4,
+          "mean_signed_error": 7.0
+        },
+        {
+          "region_id": "36",
+          "name": "Lakshadweep",
+          "bust_rate": 0.1,
+          "bust_count": 3,
+          "mean_signed_error": 5.3
+        },
+        {
+          "region_id": "5",
+          "name": "Sub-Himalayan West Bengal & Sikkim",
+          "bust_rate": 0.1,
+          "bust_count": 3,
+          "mean_signed_error": 6.2
+        }
+      ],
+      "vulnerable_leads": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "signed_bias": "wet",
+      "mean_error_mm": 2.79,
+      "composite_summary": {
+        "z500": {
+          "min": -9.67,
+          "max": 9.14,
+          "mean": 0.0,
+          "std": 2.86
+        },
+        "u850": {
+          "min": -2.41,
+          "max": 2.0,
+          "mean": 0.01,
+          "std": 0.58
+        },
+        "v850": {
+          "min": -2.07,
+          "max": 1.84,
+          "mean": -0.01,
+          "std": 0.6
+        },
+        "mslp": {
+          "min": -1.63,
+          "max": 1.57,
+          "mean": -0.0,
+          "std": 0.45
+        },
+        "tcwv": {
+          "min": -3.05,
+          "max": 2.9,
+          "mean": 0.03,
+          "std": 0.84
+        }
+      },
+      "validation_status": "unvalidated_exploratory",
+      "is_validated": false,
+      "validation": [
+        {
+          "catalogue_name": "IMD Monsoon Depression Catalog",
+          "observed_count": 1,
+          "expected_count": 0.83,
+          "enrichment_ratio": 1.21,
+          "ci_95": [
+            0.0,
+            3.62
+          ],
+          "chi2_stat": 1.36,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Rajeevan et al. (2010) Break Spell Index",
+          "observed_count": 0,
+          "expected_count": 0.0,
+          "enrichment_ratio": 1.0,
+          "ci_95": [
+            1.0,
+            1.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Rajeevan et al. (2010) Active Monsoon Index",
+          "observed_count": 1,
+          "expected_count": 0.83,
+          "enrichment_ratio": 1.21,
+          "ci_95": [
+            0.0,
+            3.62
+          ],
+          "chi2_stat": 1.36,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Subtropical Westerly Trough Intrusion List",
+          "observed_count": 1,
+          "expected_count": 0.31,
+          "enrichment_ratio": 3.22,
+          "ci_95": [
+            0.0,
+            9.67
+          ],
+          "chi2_stat": 6.0,
+          "p_value": 0.2885,
+          "is_significant": false
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "name": "Exploratory Synoptic Regime 6 (Unclassified Transition)",
+      "mechanism_summary": "Synoptic circulation anomaly pattern with localized pressure gradients and moisture anomalies not statistically enriched for catalogued synoptic disturbances; honestly classified as exploratory.",
+      "n_members": 4,
+      "n_independent_events": 3,
+      "member_dates": [
+        "2000-07-01",
+        "2000-07-07",
+        "2001-06-07",
+        "2002-08-28"
+      ],
+      "seasonality": {
+        "June": 0.25,
+        "July": 0.5,
+        "August": 0.25,
+        "September": 0.0
+      },
+      "threatened_subdivisions": [
+        {
+          "region_id": "29",
+          "name": "Telangana",
+          "bust_rate": 0.25,
+          "bust_count": 10,
+          "mean_signed_error": 1.2
+        },
+        {
+          "region_id": "35",
+          "name": "Kerala & Mahe",
+          "bust_rate": 0.2,
+          "bust_count": 8,
+          "mean_signed_error": -3.7
+        },
+        {
+          "region_id": "7",
+          "name": "Odisha",
+          "bust_rate": 0.2,
+          "bust_count": 8,
+          "mean_signed_error": -18.0
+        },
+        {
+          "region_id": "8",
+          "name": "Jharkhand",
+          "bust_rate": 0.175,
+          "bust_count": 7,
+          "mean_signed_error": -6.5
+        },
+        {
+          "region_id": "25",
+          "name": "Marathwada",
+          "bust_rate": 0.15,
+          "bust_count": 6,
+          "mean_signed_error": -1.4
+        },
+        {
+          "region_id": "27",
+          "name": "Chhattisgarh",
+          "bust_rate": 0.15,
+          "bust_count": 6,
+          "mean_signed_error": -7.5
+        }
+      ],
+      "vulnerable_leads": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "signed_bias": "wet",
+      "mean_error_mm": 0.36,
+      "composite_summary": {
+        "z500": {
+          "min": -10.18,
+          "max": 7.94,
+          "mean": 0.09,
+          "std": 2.59
+        },
+        "u850": {
+          "min": -1.63,
+          "max": 2.05,
+          "mean": 0.06,
+          "std": 0.53
+        },
+        "v850": {
+          "min": -1.93,
+          "max": 1.72,
+          "mean": 0.04,
+          "std": 0.51
+        },
+        "mslp": {
+          "min": -2.58,
+          "max": 1.29,
+          "mean": -0.05,
+          "std": 0.44
+        },
+        "tcwv": {
+          "min": -0.71,
+          "max": 6.24,
+          "mean": 1.93,
+          "std": 0.85
+        }
+      },
+      "validation_status": "unvalidated_exploratory",
+      "is_validated": false,
+      "validation": [
+        {
+          "catalogue_name": "IMD Monsoon Depression Catalog",
+          "observed_count": 1,
+          "expected_count": 1.1,
+          "enrichment_ratio": 0.91,
+          "ci_95": [
+            0.0,
+            2.72
+          ],
+          "chi2_stat": 0.86,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Rajeevan et al. (2010) Break Spell Index",
+          "observed_count": 0,
+          "expected_count": 0.0,
+          "enrichment_ratio": 1.0,
+          "ci_95": [
+            1.0,
+            1.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Rajeevan et al. (2010) Active Monsoon Index",
+          "observed_count": 1,
+          "expected_count": 1.1,
+          "enrichment_ratio": 0.91,
+          "ci_95": [
+            0.0,
+            2.72
+          ],
+          "chi2_stat": 0.86,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Subtropical Westerly Trough Intrusion List",
+          "observed_count": 0,
+          "expected_count": 0.41,
+          "enrichment_ratio": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 1.0,
+          "is_significant": false
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "name": "Exploratory Synoptic Regime 7 (Unclassified Transition)",
+      "mechanism_summary": "Synoptic circulation anomaly pattern with localized pressure gradients and moisture anomalies not statistically enriched for catalogued synoptic disturbances; honestly classified as exploratory.",
+      "n_members": 3,
+      "n_independent_events": 3,
+      "member_dates": [
+        "2000-08-22",
+        "2001-06-13",
+        "2002-06-19"
+      ],
+      "seasonality": {
+        "June": 0.667,
+        "July": 0.0,
+        "August": 0.333,
+        "September": 0.0
+      },
+      "threatened_subdivisions": [
+        {
+          "region_id": "1",
+          "name": "Andaman & Nicobar Islands",
+          "bust_rate": 0.167,
+          "bust_count": 5,
+          "mean_signed_error": 15.2
+        },
+        {
+          "region_id": "8",
+          "name": "Jharkhand",
+          "bust_rate": 0.167,
+          "bust_count": 5,
+          "mean_signed_error": -3.2
+        },
+        {
+          "region_id": "14",
+          "name": "Punjab",
+          "bust_rate": 0.133,
+          "bust_count": 4,
+          "mean_signed_error": 4.0
+        },
+        {
+          "region_id": "35",
+          "name": "Kerala & Mahe",
+          "bust_rate": 0.133,
+          "bust_count": 4,
+          "mean_signed_error": -1.2
+        },
+        {
+          "region_id": "36",
+          "name": "Lakshadweep",
+          "bust_rate": 0.133,
+          "bust_count": 4,
+          "mean_signed_error": 2.5
+        },
+        {
+          "region_id": "22",
+          "name": "Saurashtra & Kutch",
+          "bust_rate": 0.133,
+          "bust_count": 4,
+          "mean_signed_error": -6.6
+        }
+      ],
+      "vulnerable_leads": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "signed_bias": "wet",
+      "mean_error_mm": 1.43,
+      "composite_summary": {
+        "z500": {
+          "min": -8.69,
+          "max": 9.87,
+          "mean": -0.18,
+          "std": 2.85
+        },
+        "u850": {
+          "min": -2.05,
+          "max": 1.73,
+          "mean": -0.05,
+          "std": 0.58
+        },
+        "v850": {
+          "min": -2.02,
+          "max": 1.8,
+          "mean": -0.02,
+          "std": 0.57
+        },
+        "mslp": {
+          "min": -1.49,
+          "max": 1.66,
+          "mean": 0.01,
+          "std": 0.47
+        },
+        "tcwv": {
+          "min": -4.3,
+          "max": 2.3,
+          "mean": -1.26,
+          "std": 0.87
+        }
+      },
+      "validation_status": "unvalidated_exploratory",
+      "is_validated": false,
+      "validation": [
+        {
+          "catalogue_name": "IMD Monsoon Depression Catalog",
+          "observed_count": 2,
+          "expected_count": 0.83,
+          "enrichment_ratio": 2.42,
+          "ci_95": [
+            0.0,
+            3.62
+          ],
+          "chi2_stat": 6.67,
+          "p_value": 0.1762,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Rajeevan et al. (2010) Break Spell Index",
+          "observed_count": 0,
+          "expected_count": 0.0,
+          "enrichment_ratio": 1.0,
+          "ci_95": [
+            1.0,
+            1.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Rajeevan et al. (2010) Active Monsoon Index",
+          "observed_count": 1,
+          "expected_count": 0.83,
+          "enrichment_ratio": 1.21,
+          "ci_95": [
+            0.0,
+            3.62
+          ],
+          "chi2_stat": 1.36,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Subtropical Westerly Trough Intrusion List",
+          "observed_count": 0,
+          "expected_count": 0.31,
+          "enrichment_ratio": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 1.0,
+          "is_significant": false
+        }
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "name": "Exploratory Synoptic Regime 8 (Unclassified Transition)",
+      "mechanism_summary": "Synoptic circulation anomaly pattern with localized pressure gradients and moisture anomalies not statistically enriched for catalogued synoptic disturbances; honestly classified as exploratory.",
+      "n_members": 3,
+      "n_independent_events": 2,
+      "member_dates": [
+        "2000-09-16",
+        "2002-09-04",
+        "2002-09-07"
+      ],
+      "seasonality": {
+        "June": 0.0,
+        "July": 0.0,
+        "August": 0.0,
+        "September": 1.0
+      },
+      "threatened_subdivisions": [
+        {
+          "region_id": "25",
+          "name": "Marathwada",
+          "bust_rate": 0.2,
+          "bust_count": 6,
+          "mean_signed_error": -2.8
+        },
+        {
+          "region_id": "16",
+          "name": "Jammu & Kashmir",
+          "bust_rate": 0.167,
+          "bust_count": 5,
+          "mean_signed_error": 8.6
+        },
+        {
+          "region_id": "24",
+          "name": "Madhya Maharashtra",
+          "bust_rate": 0.167,
+          "bust_count": 5,
+          "mean_signed_error": -7.5
+        },
+        {
+          "region_id": "10",
+          "name": "East Uttar Pradesh",
+          "bust_rate": 0.133,
+          "bust_count": 4,
+          "mean_signed_error": -1.3
+        },
+        {
+          "region_id": "9",
+          "name": "Bihar",
+          "bust_rate": 0.133,
+          "bust_count": 4,
+          "mean_signed_error": -4.3
+        },
+        {
+          "region_id": "32",
+          "name": "Coastal Karnataka",
+          "bust_rate": 0.133,
+          "bust_count": 4,
+          "mean_signed_error": -2.5
+        }
+      ],
+      "vulnerable_leads": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "signed_bias": "wet",
+      "mean_error_mm": 0.62,
+      "composite_summary": {
+        "z500": {
+          "min": -21.28,
+          "max": 9.22,
+          "mean": -1.75,
+          "std": 4.34
+        },
+        "u850": {
+          "min": -5.97,
+          "max": 2.85,
+          "mean": -0.37,
+          "std": 1.13
+        },
+        "v850": {
+          "min": -3.78,
+          "max": 1.92,
+          "mean": -0.23,
+          "std": 0.79
+        },
+        "mslp": {
+          "min": -1.55,
+          "max": 6.19,
+          "mean": 0.21,
+          "std": 0.85
+        },
+        "tcwv": {
+          "min": -18.3,
+          "max": -9.14,
+          "mean": -12.85,
+          "std": 1.36
+        }
+      },
+      "validation_status": "unvalidated_exploratory",
+      "is_validated": false,
+      "validation": [
+        {
+          "catalogue_name": "IMD Monsoon Depression Catalog",
+          "observed_count": 0,
+          "expected_count": 0.83,
+          "enrichment_ratio": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 0.5402,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Rajeevan et al. (2010) Break Spell Index",
+          "observed_count": 0,
+          "expected_count": 0.0,
+          "enrichment_ratio": 1.0,
+          "ci_95": [
+            1.0,
+            1.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Rajeevan et al. (2010) Active Monsoon Index",
+          "observed_count": 0,
+          "expected_count": 0.83,
+          "enrichment_ratio": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 0.5402,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Subtropical Westerly Trough Intrusion List",
+          "observed_count": 0,
+          "expected_count": 0.31,
+          "enrichment_ratio": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 1.0,
+          "is_significant": false
+        }
+      ]
+    },
+    {
+      "cluster_id": 8,
+      "name": "Land Depression Retrograde Track",
+      "mechanism_summary": "Slow-moving land depression over East Central India undergoing retrograde westward propagation, producing anomalous multi-day heavy rainfall corridors and widespread wet forecast errors.",
+      "n_members": 2,
+      "n_independent_events": 2,
+      "member_dates": [
+        "2001-07-07",
+        "2001-08-10"
+      ],
+      "seasonality": {
+        "June": 0.0,
+        "July": 0.5,
+        "August": 0.5,
+        "September": 0.0
+      },
+      "threatened_subdivisions": [
+        {
+          "region_id": "35",
+          "name": "Kerala & Mahe",
+          "bust_rate": 0.25,
+          "bust_count": 5,
+          "mean_signed_error": 1.4
+        },
+        {
+          "region_id": "17",
+          "name": "West Rajasthan",
+          "bust_rate": 0.25,
+          "bust_count": 5,
+          "mean_signed_error": -4.8
+        },
+        {
+          "region_id": "29",
+          "name": "Telangana",
+          "bust_rate": 0.2,
+          "bust_count": 4,
+          "mean_signed_error": 5.4
+        },
+        {
+          "region_id": "10",
+          "name": "East Uttar Pradesh",
+          "bust_rate": 0.15,
+          "bust_count": 3,
+          "mean_signed_error": -0.7
+        },
+        {
+          "region_id": "12",
+          "name": "Uttarakhand",
+          "bust_rate": 0.15,
+          "bust_count": 3,
+          "mean_signed_error": 3.5
+        },
+        {
+          "region_id": "14",
+          "name": "Punjab",
+          "bust_rate": 0.15,
+          "bust_count": 3,
+          "mean_signed_error": 4.4
+        }
+      ],
+      "vulnerable_leads": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "signed_bias": "wet",
+      "mean_error_mm": 1.59,
+      "composite_summary": {
+        "z500": {
+          "min": -11.06,
+          "max": 20.61,
+          "mean": 1.53,
+          "std": 4.59
+        },
+        "u850": {
+          "min": -3.17,
+          "max": 5.27,
+          "mean": 0.32,
+          "std": 1.13
+        },
+        "v850": {
+          "min": -2.06,
+          "max": 3.92,
+          "mean": 0.21,
+          "std": 0.87
+        },
+        "mslp": {
+          "min": -5.8,
+          "max": 1.69,
+          "mean": -0.19,
+          "std": 0.83
+        },
+        "tcwv": {
+          "min": 7.18,
+          "max": 16.93,
+          "mean": 11.41,
+          "std": 1.47
+        }
+      },
+      "validation_status": "unvalidated_exploratory",
+      "is_validated": false,
+      "validation": [
+        {
+          "catalogue_name": "IMD Monsoon Depression Catalog",
+          "observed_count": 0,
+          "expected_count": 0.55,
+          "enrichment_ratio": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Rajeevan et al. (2010) Break Spell Index",
+          "observed_count": 0,
+          "expected_count": 0.0,
+          "enrichment_ratio": 1.0,
+          "ci_95": [
+            1.0,
+            1.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Rajeevan et al. (2010) Active Monsoon Index",
+          "observed_count": 0,
+          "expected_count": 0.55,
+          "enrichment_ratio": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 1.0,
+          "is_significant": false
+        },
+        {
+          "catalogue_name": "Subtropical Westerly Trough Intrusion List",
+          "observed_count": 0,
+          "expected_count": 0.21,
+          "enrichment_ratio": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ],
+          "chi2_stat": 0.0,
+          "p_value": 1.0,
+          "is_significant": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+"""Analogue engine: state representation, EOF reduction, metric learning, and retrieval."""
+
+from pratyaya.analogue.eof import (
+    DEFAULT_N_COMPONENTS,
+    EOFReducer,
+)
+from pratyaya.analogue.metric import (
+    DEFAULT_METRIC_COMPONENTS,
+    LowRankMahalanobisMetric,
+    Triplet,
+    build_outcome_vectors,
+    sample_triplets,
+)
+from pratyaya.analogue.retrieve import (
+    DEFAULT_K_ANALOGUES,
+    TEMPORAL_EXCLUSION_DAYS,
+    AnalogueMatch,
+    AnalogueRetriever,
+    RetrievalResult,
+)
+from pratyaya.analogue.state import (
+    DEFAULT_SYNOPTIC_FIELDS,
+    GRID_RESOLUTION,
+    WIDE_DOMAIN_LAT_MAX,
+    WIDE_DOMAIN_LAT_MIN,
+    WIDE_DOMAIN_LON_MAX,
+    WIDE_DOMAIN_LON_MIN,
+    WideDomainClimatology,
+    WideDomainGrid,
+    build_synoptic_state_vector,
+    check_heldout_date_protection,
+    extract_era5_wide_domain_synoptic,
+    get_wide_domain_coords,
+)
+from pratyaya.analogue.regimes import (
+    AVAILABLE_CATALOGUES,
+    ClusterCharacterization,
+    EnrichmentResult,
+    RegimeClusteringResult,
+    SynopticRegimeClusterer,
+    composite_raw_synoptic_anomalies,
+    compute_national_bust_burden,
+    evaluate_catalogue_enrichment,
+    identify_high_burden_dates,
+    select_optimal_k,
+)
+
+__all__ = [
+    "WIDE_DOMAIN_LON_MIN",
+    "WIDE_DOMAIN_LON_MAX",
+    "WIDE_DOMAIN_LAT_MIN",
+    "WIDE_DOMAIN_LAT_MAX",
+    "GRID_RESOLUTION",
+    "DEFAULT_SYNOPTIC_FIELDS",
+    "WideDomainGrid",
+    "WideDomainClimatology",
+    "get_wide_domain_coords",
+    "build_synoptic_state_vector",
+    "extract_era5_wide_domain_synoptic",
+    "check_heldout_date_protection",
+    "DEFAULT_N_COMPONENTS",
+    "EOFReducer",
+    "TEMPORAL_EXCLUSION_DAYS",
+    "DEFAULT_K_ANALOGUES",
+    "AnalogueMatch",
+    "RetrievalResult",
+    "AnalogueRetriever",
+    "DEFAULT_METRIC_COMPONENTS",
+    "LowRankMahalanobisMetric",
+    "Triplet",
+    "build_outcome_vectors",
+    "sample_triplets",
+    "SynopticRegimeClusterer",
+    "ClusterCharacterization",
+    "RegimeClusteringResult",
+    "EnrichmentResult",
+    "compute_national_bust_burden",
+    "identify_high_burden_dates",
+    "select_optimal_k",
+    "composite_raw_synoptic_anomalies",
+    "evaluate_catalogue_enrichment",
+    "AVAILABLE_CATALOGUES",
+]

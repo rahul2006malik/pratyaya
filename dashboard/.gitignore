@@ -1,0 +1,9 @@
+# Node & Vite
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Editor & System
+.DS_Store
+*.log

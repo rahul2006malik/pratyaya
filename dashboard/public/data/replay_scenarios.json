@@ -1,0 +1,18 @@
+[
+  {
+    "id": "july2002_break",
+    "title": "Case 1: July 2002 Break Monsoon Onset",
+    "description": "Severe drought and break monsoon onset. NWP models predicted active monsoon continuation across Central India, but synoptic analogue engine detected catastrophic suppression 4\u20137 days ahead.",
+    "cycle_date": "2002-07-07",
+    "date_range": "2002-07-07 to 2002-07-14",
+    "leads": "Lead Days 1 to 7"
+  },
+  {
+    "id": "july2001_depression",
+    "title": "Case 2: July 2001 Active Monsoon Depression",
+    "description": "Deep monsoon depression developing over northwest Bay of Bengal and tracking west-northwestward with heavy orographic enhancement along Western Ghats.",
+    "cycle_date": "2001-07-01",
+    "date_range": "2001-07-01 to 2001-07-08",
+    "leads": "Lead Days 1 to 7"
+  }
+]
